@@ -1,0 +1,113 @@
+*{
+    
+    
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background: rgb(130, 106, 251);
+
+}
+.container{   
+ position: relative;
+    max-width: 700px;
+    width: 100%;    
+    background: #ff56ff;
+    border-radius: 20px 40px;
+    padding: 25px;
+    justify-content: center;
+}
+.container .form{
+    margin-top: 30px;
+}
+.container h1{
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+
+}
+.form .input-box{
+    width: 100%;
+    margin-top: 20px;
+}
+.form .input-box input{
+    width: 90%;
+    margin-top: 8px;
+    position: relative;
+    height: 50px;
+    background: transparent;
+    border: 1px solid #fff;
+    outline: none;
+    padding: 0 15px;
+    border-radius: 10px 20px;
+    color: #f3f0f0;
+    font-size: 1rem;
+}
+.input-box label {    
+    color: #333;
+}
+.container input::placeholder{
+    color: #fff;
+}
+.container .btn {
+   font-size: 18px;
+   font-weight: bold;
+   margin: 20px 0;
+   padding: 10px 15px;
+   width: 100%;
+   border: 2px solid #fff;
+   border-radius: 10px;
+   transition: 0.4s;
+   
+
+}
+.container .btn:hover{
+    background: none;
+    color: white;
+}
+.form .Column{
+    display: flex;
+    column-gap: 15px;
+}
+/*responsiveness*/
+@media  screen and (max-width: 500px) {
+    .form .Column{
+        flex-wrap: wrap;
+    }
+    .form .Address-list-1{
+        flex-wrap: wrap;
+    }
+    .form .Address-list-2{
+        flex-wrap: wrap;
+    }
+
+}
+.form :where(.Gender-options , .gender) {
+    display: flex;
+    column-gap: 70px;
+    align-items: center;
+}
+.form .gender{
+    column-gap: 5px;
+}
+.form .Address-list-1{
+    display: flex;
+    column-gap: 15px;
+
+
+}
+.form .Address-list-1 input{
+    position: relative;
+    margin-top: 20px;
+}
+.form .Address-list-2{
+    display: flex;
+    column-gap: 15px;
+}
+.form .Address-list-2 input{
+    position: relative;
+}
